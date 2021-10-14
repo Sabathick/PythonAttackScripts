@@ -19,7 +19,7 @@ window.exit_button.visible = False
 
 def update():
     global block_pick
-
+    global paused
     if held_keys['left mouse'] or held_keys['right mouse']:
         hand.active()
     else:
@@ -29,7 +29,6 @@ def update():
     if held_keys['2']: block_pick = 2
     if held_keys['3']: block_pick = 3
     if held_keys['4']: block_pick = 4
-    if held_keys['i']: inventory(False)
     if held_keys['escape']: sys.exit()
        
 
