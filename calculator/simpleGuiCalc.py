@@ -1,3 +1,10 @@
 import PySimpleGUI as sg
 
-sg.Window(title="Hello World", layout=[[]], margins=(100, 50)).read()
+sg.theme('Dark Blue 3')
+
+layout = [[sg.Text('Calculator')],
+        [sg.InputText()],
+        [sg.Button('Ok'),sg.Button('Clear'),sg.Button('Exit')]]
+
+window = sg.Window("Calculator", layout, margins=(100, 50))
+event, values = window.read()
