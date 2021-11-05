@@ -39,9 +39,10 @@ speed=1
 speed2=1
 m = 0
 x = 0
-cube = Entity(model="cube", rotation=(45,45,0), color=color.rgb(255,0,0))
 txt = Text(text="This is a red cube", scale=2)
-cube2=Entity(model="cube", color=color.white)
+cubes=[]
+cube = Entity(model="cube", rotation=(45,45,0), color=color.rgb(255,0,0), texture="white-cube")
+cube2 = Entity(model="cube", color=color.white, position=(2,0,0), texture="brick")
 
 app.run()
 
