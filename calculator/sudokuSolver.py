@@ -63,10 +63,10 @@ def print_board(bo):
                 print(str(bo[i][j]) + " ", end="")
 
 
-def find_empty(bo):
-    for i in range(len(bo)):
-        for j in range(len(bo[0])):
-            if bo[i][j] == 0:
+def find_empty(newBoard):
+    for i in range(len(newBoard)):
+        for j in range(len(newBoard[0])):
+            if newBoard[i][j] == 0:
                 return (i, j)  # row, col
 
     return None
