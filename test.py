@@ -1,4 +1,7 @@
-def fun(x,y,z):
-    return x+2*y+3*z
+def function_1(a):
+    return None
 
-print(fun(0,z=1,y=3))
+def function_2(a):
+    return function_1(a) * function_1(a)
+
+print(function_2(2))
