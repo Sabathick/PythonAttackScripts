@@ -1,7 +1,4 @@
-def function_1(a):
-    return None
+from random import randint
 
-def function_2(a):
-    return function_1(a) * function_1(a)
-
-print(function_2(2))
+for i in range(2):
+    print(randint(1,2), end="")
