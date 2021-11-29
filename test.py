@@ -1,4 +1,12 @@
-from random import randint
+try:
+    print("5"/0)
+except ArithmeticError:
+    print("arith")
+except ZeroDivisionError:
+    print("zero")
+except:
+    print("some")
 
-for i in range(2):
-    print(randint(1,2), end="")
+print(ord('c') -ord('a'))
+print(chr(ord('z') - 2))
+print(3 * 'abc' + 'xyz')
