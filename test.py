@@ -1,12 +1,11 @@
-try:
-    print("5"/0)
-except ArithmeticError:
-    print("arith")
-except ZeroDivisionError:
-    print("zero")
-except:
-    print("some")
+class Ex(Exception):
+    def __init__(self,msg):
+        Exception.__init__(self,msg +msg)
+        self.args = (msg,)
 
-print(ord('c') -ord('a'))
-print(chr(ord('z') - 2))
-print(3 * 'abc' + 'xyz')
+try:
+    raise Ex('ex')
+except Ex as e:
+    print(e)
+except Exception as e:
+    print(e)
